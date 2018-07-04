@@ -1,0 +1,97 @@
+.pos{
+  font-size: 12px;
+  .pos-order{
+    background-color: #f9fafc;
+    border-right: 1px solid #c0ccda;
+  }
+}
+
+.often-goods{
+  .title{
+    height: 20px;
+    border-bottom: 1px solid #d3dce6;
+    background-color: #f9fafc;
+    padding: 10px;
+  }
+  .often-goods-list{
+    border-bottom: 1px solid #c0ccda;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background-color: #f9fafc;
+    ul{
+      li{
+        list-style: none;
+        float: left;
+        border: 1px solid #e5e9f2;
+        padding: 10px;
+        margin: 5px;
+        background-color: #fff;
+      }
+    }
+  }
+  .o-price{
+    color: #58b7ff;
+  }
+}
+.goods-type{
+  clear: both;
+  // margin: 5px;
+}
+.cookList{
+  display: flex;
+  // 换行 第一行在上方
+  flex-wrap: wrap;
+  // 与交叉轴两端对齐，轴线之间的间隔平均分布。
+  justify-content: flex-start;
+  li{
+    display: flex;
+    justify-content: space-between;
+    // 交叉轴顶端对齐
+    align-items: flex-start;
+    list-style: none;
+    border: 1px solid #e5e9f2;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 2px;
+    cursor: pointer;
+    margin: 2px;
+    width: 30%;
+    .foodImg{
+      img{
+        width: 114px;
+        height: 114px;
+      }
+    }
+    .detail{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      font-size: 18px;
+      padding-right: 10px;
+      .foodName{
+        justify-content: left;
+        order: 1;
+      }
+      .foodPrice{
+        justify-content: right;
+        order: 3;
+      }
+      .empty{
+        display: inline-block;
+        height: 15px;
+        order: 2;
+      }
+    }
+  }
+}
+.total{
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #E5E9F2;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
